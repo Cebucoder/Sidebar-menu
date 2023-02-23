@@ -1,0 +1,102 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');*/
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.sidebar{
+	width: 100px;
+	height: 100vh;
+	background: #000;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	left: -100%;
+	transition: 0.5s;
+	z-index: 1;
+}
+.active{
+	background: #fff;
+	color: #000;
+}
+
+/*open sidebar*/
+.show-sidebar{
+	left: 0%;
+}
+.menu{
+	color: #000;
+	width: 100px;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.menu ion-icon{
+	font-size: 30px;
+	transition: 0.3s;
+}
+.menu-color{
+	color: #fff;
+}
+.menu ion-icon:hover{
+	transform: scale(1.1);
+}
+
+.sidebar-link{
+	width: 100%;
+	height: auto;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+/*	background: pink;*/
+	align-items: center;
+	justify-content: space-between;
+	padding: 90px 0;
+}
+.sidebar-link li{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 25px;
+	margin: 3px 0;
+	transition: 0.1s;
+	list-style: none;
+}
+.sidebar-link li:hover{
+	background: #fff;
+	transition: 0.3s;
+	color: #000;
+}
+.settings{
+	color: #fff;
+	padding-bottom: 30px;
+}
+.settings li{
+	list-style: none;
+	width: 60px;
+	height: 60px;
+	font-size: 25px;
+	border-radius: 50%;
+	transition: 0.1s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.settings li:hover{
+	background: #fff;
+	transition: 0.3s;
+	color: #000;
+
+}

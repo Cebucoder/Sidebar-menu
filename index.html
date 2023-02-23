@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Side-bar</title>
+</head>
+<body>
+
+	<div class="container">
+		<div class="sidebar" id="sidebar">
+
+			<div class="menu" onclick="openSidebar()" id="menu">
+				<ion-icon name="menu"></ion-icon>
+			</div>
+			
+			<div class="sidebar-link">
+				<li class="active"><ion-icon name="home"></ion-icon></li>
+				<li><ion-icon name="person"></ion-icon></li>
+				<li><ion-icon name="layers"></ion-icon></li>
+			</div>
+
+			<div class="settings">
+				<li><ion-icon name="layers"></ion-icon></li>
+				<li><ion-icon name="code-slash"></ion-icon></li>
+			</div>
+
+		</div>
+	</div>
+
+</body>
+
+<!-- now lets add the function -->
+
+<script type="text/javascript">
+	let menu = document.getElementById("sidebar");
+	let menuColor = document.getElementById("menu");
+
+	function openSidebar() {
+		menu.classList.toggle("show-sidebar");
+		menuColor.classList.toggle("menu-color");
+	}
+	// lets try if is work
+</script>
+
+<!-- icons from ion icons -->
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</html>
